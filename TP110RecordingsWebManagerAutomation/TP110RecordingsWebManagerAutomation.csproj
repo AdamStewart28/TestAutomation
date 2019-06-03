@@ -70,6 +70,7 @@
     <Compile Include="TestCases\ArchiveRecordingsTest.cs" />
     <Compile Include="TestCases\AudioStreamingTest.cs" />
     <Compile Include="TestCases\DisableStorageDeviceTest.cs" />
+    <Compile Include="TestCases\FormatStorageDeviceTest.cs" />
     <Compile Include="TestCases\ViewStorageDeviceTest.cs" />
     <Compile Include="TestCases\FrameRateTest.cs" />
     <Compile Include="TestCases\BandwidthTest.cs" />

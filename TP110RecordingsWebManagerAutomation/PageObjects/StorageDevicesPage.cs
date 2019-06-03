@@ -4,7 +4,7 @@ using OpenQA.Selenium.Support.PageObjects;
 namespace TP110RecordingsWebManagerAutomation.PageObjects
 {
     public class StorageDevicesPage
-    {        
+    {
         private readonly IWebDriver driver;
 
         // Clicking the 'Storage Settings' menu
@@ -32,6 +32,33 @@ namespace TP110RecordingsWebManagerAutomation.PageObjects
         public void Submit()
         {
             SubmitButton.Click();
+        }
+
+        // Selecting one of the storage devices
+        [FindsBy(How = How.XPath, Using = "//html[@class='ng-scope']/body[@id='top']/section[@id='float']/div[@class='content ng-scope']/div[@class='container storage_page ng-scope']/div[@class='contentPage']/article/ul[@class='statusBoxes onecolumn']/li[@class='ng-scope'][3]/a")]
+        public IWebElement EnterStorageDeivce { get; set; }
+
+        public void ClickIntoStorageDevice()
+        {
+            EnterStorageDeivce.Click();
+        }
+
+        // Format menu for an encoder
+        [FindsBy(How = How.XPath, Using = "//html[@class='ng-scope']/body[@id='top']/section[@id='float']/div[@class='content ng-scope']/div[@class='container storage_page ng-scope']/div[@class='contentPage']/aside/ul/li[@class='ng-scope'][1]/a")]
+        public IWebElement EnterFormatMenu { get; set; }
+
+        public void OpenFormatMenu()
+        {
+            EnterFormatMenu.Click();
+        }
+
+        // Confirm Format Device
+        [FindsBy(How = How.Id, Using = "submit")]
+        public IWebElement SubmitFormat { get; set; }
+
+        public void FormatSubmit()
+        {
+            SubmitFormat.Click();
         }
     }
 }
