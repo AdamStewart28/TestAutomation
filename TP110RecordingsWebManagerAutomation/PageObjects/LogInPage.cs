@@ -22,8 +22,8 @@ namespace TP110RecordingsWebManagerAutomation.PageObjects
         public void LogIntoApplication()
         {
             // (*CHANGE CREDENTIALS ACCORDINGLY*)
-            Username.SendKeys("AdamS");
-            Password.SendKeys("password1");
+            Username.SendKeys("Administrator");
+            Password.SendKeys("password");
             Submit.Click();
         }
     }

@@ -91,3 +91,4 @@ C:\Work\TestAutomation\TP110RecordingsWebManagerAutomation\bin\Debug\nunit.frame
 C:\Work\TestAutomation\TP110RecordingsWebManagerAutomation\bin\Debug\WebDriver.xml
 C:\Work\TestAutomation\TP110RecordingsWebManagerAutomation\bin\Debug\WebDriver.Support.xml
 C:\Work\TestAutomation\TP110RecordingsWebManagerAutomation\obj\Debug\TP110RecordingsWebManagerAutomation.csproj.CopyComplete
+C:\Work\TestAutomation\TP110RecordingsWebManagerAutomation\obj\Debug\TP110RecordingsWebManagerAutomation.csprojAssemblyReference.cache
