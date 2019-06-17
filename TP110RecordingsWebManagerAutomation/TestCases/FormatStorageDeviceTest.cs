@@ -79,8 +79,8 @@ namespace TP110RecordingsWebManagerAutomation.TestCases
             Thread.Sleep(20000);
             driver.Navigate().Refresh();
             Thread.Sleep(10000);
-            var teest = driver.FindElement(By.XPath("//html[@class='ng-scope']/body[@id='top']/section[@id='float']/div[@class='content ng-scope']/div[@class='container storage_page ng-scope']/div[@class='contentPage']/article[@class='ng-scope']/div[@class='info-block']/p[@class='info-block-content ng-binding']"));
-            Assert.IsTrue(teest.Text.Contains("Disk ready for use"));
+            var validateDiskText = driver.FindElement(By.XPath("//html[@class='ng-scope']/body[@id='top']/section[@id='float']/div[@class='content ng-scope']/div[@class='container storage_page ng-scope']/div[@class='contentPage']/article[@class='ng-scope']/div[@class='info-block']/p[@class='info-block-content ng-binding']"));
+            Assert.IsTrue(validateDiskText.Text.Contains("Disk ready for use"));
 
             // Exiting the test if completed
             WebDriverWait storageDeviceWait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
