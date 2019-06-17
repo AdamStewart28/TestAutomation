@@ -9,7 +9,7 @@ using System.Threading;
 
 namespace TP110RecordingsWebManagerAutomation.TestCases
 {
-    public class FormatStoragDeviceTest
+    public class FormatStorageDeviceTest
     {
         [Test]
         public void Test()
