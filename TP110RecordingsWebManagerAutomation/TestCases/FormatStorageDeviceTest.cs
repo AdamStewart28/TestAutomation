@@ -86,6 +86,7 @@ namespace TP110RecordingsWebManagerAutomation.TestCases
             WebDriverWait storageDeviceWait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
             IWebElement StorageDeviceButton = storageDeviceWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("//html[@class='ng-scope']/body[@id='top']/section[@id='float']/div[@class='content ng-scope']/div[@class='container storage_page ng-scope']/div[@class='contentPage']/article[@class='ng-scope']/div[@class='info-block']/p[@class='info-block-content ng-binding']")));
             driver.Quit();
+
         }
     }
 }
